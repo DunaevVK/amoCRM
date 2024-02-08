@@ -8,18 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  // server: {
-  //   cors: {
-  //     origin: "*",
-  //     methods: ["GET", "POST"],
-  //     allowedHeaders: ["Content-Type", "X-Client-Id"],
-  //     preflightContinue: true,
-  //     credentials: true,
-  //   },
-  //   proxy: {
-
-  //   }
-  // },
+  base: "/amoCRM",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
